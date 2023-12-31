@@ -1,0 +1,572 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  height: 330px;
+  background-image: url(https://www.bmwhk.com/content/dam/bmw/common/all-models/2-series/coupe/2021/highlights/bmw-2-series-coupe-ag-onepager-gallery-driving-dynamics-02.jpg);
+  background-size: 100%;
+  color: white;
+  border-bottom-right-radius: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1024px) {
+  .header {
+    height: 470px;
+  }
+}
+.header-nav {
+  height: 60px;
+  display: flex;
+  width: 76%;
+  margin-left: 12%;
+  margin-right: 12%;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.header-nav-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 60%;
+}
+@media screen and (min-width: 1024px) {
+  .header-nav-menu {
+    width: 45%;
+  }
+}
+.header-nav-menu__item {
+  font-size: 12px;
+  font-weight: 600;
+}
+.header-nav-der {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-nav-der-iconos {
+  display: flex;
+  justify-content: center;
+  margin-right: 10px;
+}
+.header-nav-der-iconos__icono {
+  height: 17px;
+  margin-right: 15px;
+}
+.header-nav-der-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-nav-der-logo-logoBMW {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 55px;
+  height: 42px;
+  margin-bottom: 2px;
+}
+.header-nav-der-logo-logoBMW__img {
+  width: 30px;
+  height: 30px;
+}
+.header-nav-der-logo__frase {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5px;
+  font-weight: 600;
+  width: 55px;
+  height: 16px;
+  color: black;
+}
+.header-ad {
+  margin-left: 5%;
+  margin-bottom: 2%;
+}
+.header-ad__titulo {
+  font-size: 125%;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .header-ad__titulo {
+    font-size: 190%;
+  }
+}
+.header-ad__subtitulo {
+  font-size: 67%;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .header-ad__subtitulo {
+    font-size: 98%;
+  }
+}
+.header-ad__boton {
+  font-size: 7px;
+  color: white;
+  background-color: #1C69D5;
+  width: 22%;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  outline: none;
+  border-width: 0;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .header-ad__boton {
+    font-size: 9.5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 18.7%;
+  }
+}
+
+.series {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 13%;
+  margin-right: 13%;
+  padding-top: 50px;
+}
+@media screen and (min-width: 1024px) {
+  .series {
+    padding-top: 90px;
+  }
+}
+.series__titulo {
+  font-size: 9.5px;
+  color: #B5B5B5;
+  font-weight: 600;
+  text-decoration: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #dddbdb;
+}
+@media screen and (min-width: 1024px) {
+  .series__titulo {
+    font-size: 12px;
+  }
+}
+.series-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgb(255, 255, 255);
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  border-bottom: 1px solid #dddbdb;
+}
+@media screen and (min-width: 1024px) {
+  .series-nav {
+    margin-bottom: 30px;
+  }
+}
+.series-nav__modelo {
+  font-size: 10px;
+  color: #B5B5B5;
+  font-weight: 600;
+  text-decoration: none;
+}
+.series-nav__modelo--activo {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 17px;
+}
+@media screen and (min-width: 1024px) {
+  .series-nav__modelo--activo {
+    font-size: 25px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .series-nav__modelo {
+    font-size: 13.5px;
+  }
+}
+.series-coches {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.series-coches-coche {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1024px) {
+  .series-coches-coche {
+    padding-left: 1px;
+  }
+}
+.series-coches-coche__img {
+  width: 100px;
+  height: 70px;
+}
+@media screen and (min-width: 1024px) {
+  .series-coches-coche__img {
+    width: 157px;
+    height: 105px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .series-coches-coche__img {
+    width: 200px;
+    height: 135px;
+  }
+}
+.series-coches-coche__nombreCoche {
+  font-size: 9.5px;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+@media screen and (min-width: 1024px) {
+  .series-coches-coche__nombreCoche {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .series-coches-coche__nombreCoche {
+    font-size: 15px;
+  }
+}
+.series-coches-coche__precio {
+  font-size: 8.5px;
+  color: #B5B5B5;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+@media screen and (min-width: 1024px) {
+  .series-coches-coche__precio {
+    font-size: 9.7px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .series-coches-coche__precio {
+    font-size: 12px;
+  }
+}
+.series-coches-coche__opcion {
+  font-size: 8.3px;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 2px;
+}
+@media screen and (min-width: 1024px) {
+  .series-coches-coche__opcion {
+    font-size: 9.5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .series-coches-coche__opcion {
+    font-size: 11.8px;
+  }
+}
+
+.sugerencias {
+  margin-left: 13%;
+  margin-right: 13%;
+  margin-top: 50px;
+}
+.sugerencias-linea1 {
+  display: flex;
+  justify-content: space-between;
+}
+.sugerencias-linea1-recuadro {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dddbdb;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 7px;
+  max-width: 20.5%;
+}
+@media screen and (min-width: 1024px) {
+  .sugerencias-linea1-recuadro {
+    max-width: 22%;
+  }
+}
+.sugerencias-linea1-recuadro__img {
+  width: 100%;
+  height: 55px;
+}
+@media screen and (min-width: 1024px) {
+  .sugerencias-linea1-recuadro__img {
+    height: 92px;
+  }
+}
+.sugerencias-linea1-recuadro__titulo {
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 5px;
+}
+@media screen and (min-width: 1024px) {
+  .sugerencias-linea1-recuadro__titulo {
+    font-size: 21.5px;
+  }
+}
+.sugerencias-linea1-recuadro__parrafo {
+  font-size: 9.5px;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 8px;
+  margin-top: 5px;
+}
+@media screen and (min-width: 1024px) {
+  .sugerencias-linea1-recuadro__parrafo {
+    font-size: 9.7px;
+  }
+}
+.sugerencias-linea1-recuadro__link {
+  font-size: 8.3px;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 5px;
+}
+@media screen and (min-width: 1024px) {
+  .sugerencias-linea1-recuadro__link {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+}
+.sugerencias-linea2 {
+  margin-top: 35px;
+  margin-bottom: 75px;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 1024px) {
+  .sugerencias-linea2 {
+    margin-top: 60px;
+  }
+}
+.sugerencias-linea2-recuadro {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dddbdb;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 7px;
+  width: 46%;
+}
+@media screen and (min-width: 1024px) {
+  .sugerencias-linea2-recuadro {
+    width: 47%;
+    padding: 8px;
+  }
+}
+.sugerencias-linea2-recuadro__img {
+  width: 100%;
+  height: 95px;
+}
+@media screen and (min-width: 1024px) {
+  .sugerencias-linea2-recuadro__img {
+    height: 190px;
+  }
+}
+.sugerencias-linea2-recuadro__titulo {
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: 5px;
+}
+@media screen and (min-width: 1024px) {
+  .sugerencias-linea2-recuadro__titulo {
+    font-size: 22px;
+  }
+}
+.sugerencias-linea2-recuadro__link {
+  font-size: 8.3px;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 5px;
+}
+@media screen and (min-width: 1024px) {
+  .sugerencias-linea2-recuadro__link {
+    font-size: 9.5 px;
+    margin-bottom: 8px;
+  }
+}
+
+.menuFinal {
+  margin-top: 35px;
+  margin-left: 13%;
+  margin-right: 13%;
+  display: flex;
+  justify-content: space-between;
+}
+.menuFinal-caja {
+  width: 24%;
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-top: 5px;
+  height: 50px;
+}
+@media screen and (min-width: 1024px) {
+  .menuFinal-caja {
+    height: 80px;
+    padding-top: 12px;
+  }
+}
+.menuFinal-caja__icono {
+  width: 13%;
+}
+@media screen and (min-width: 1024px) {
+  .menuFinal-caja__icono {
+    width: 10%;
+  }
+}
+.menuFinal-caja__titulo {
+  font-size: 8.3px;
+  color: black;
+  font-weight: 600;
+  text-decoration: none;
+  color: #848484;
+}
+@media screen and (min-width: 1024px) {
+  .menuFinal-caja__titulo {
+    font-size: 10px;
+  }
+}
+
+.bloqueLinks {
+  background-color: #E6E6E6;
+  padding-top: 50px;
+  margin-top: 30px;
+  padding-bottom: 50px;
+}
+@media screen and (min-width: 1024px) {
+  .bloqueLinks {
+    padding-top: 65px;
+    margin-top: 40px;
+  }
+}
+.bloqueLinks-nav {
+  margin-left: 13%;
+  margin-right: 13%;
+  display: flex;
+  flex-direction: row;
+  border-top-color: #c6c6c6;
+  border-top-style: solid;
+  border-top-width: 1px;
+}
+.bloqueLinks-nav-listado {
+  display: flex;
+  flex-direction: column;
+  margin-top: 17px;
+}
+@media screen and (min-width: 600px) {
+  .bloqueLinks-nav-listado {
+    margin-left: 10px;
+    margin-right: 27px;
+    /*Content coje el contenido que metamos en el mixin y lo sustituye aqui*/
+  }
+}
+@media screen and (min-width: 768px) {
+  .bloqueLinks-nav-listado {
+    margin-left: 10px;
+    margin-right: 60px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .bloqueLinks-nav-listado {
+    margin-left: 15px;
+    margin-right: 60px;
+    margin-top: 25 px;
+  }
+}
+.bloqueLinks-nav-listado__titulo {
+  font-size: 9.5px;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+  margin-bottom: 13px;
+}
+@media screen and (min-width: 1024px) {
+  .bloqueLinks-nav-listado__titulo {
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+}
+.bloqueLinks-nav-listado__link {
+  font-size: 7px;
+  color: #9B9B9B;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 4px;
+}
+@media screen and (min-width: 1024px) {
+  .bloqueLinks-nav-listado__link {
+    font-size: 10.5px;
+    margin-bottom: 6px;
+  }
+}
+
+.linea-copyright {
+  margin-left: 15%;
+  margin-right: 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 1024px) {
+  .linea-copyright {
+    margin-top: 18px;
+    margin-bottom: 18px;
+  }
+}
+.linea-copyright__copy {
+  font-size: 7.5px;
+}
+@media screen and (min-width: 1024px) {
+  .linea-copyright__copy {
+    font-size: 9.5px;
+  }
+}
+.linea-copyright-legal {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.linea-copyright-legal__link {
+  color: #5D85DB;
+  text-decoration: none;
+  font-size: 7px;
+  margin-left: 6px;
+}
+@media screen and (min-width: 1024px) {
+  .linea-copyright-legal__link {
+    font-size: 9px;
+    margin-left: 12px;
+  }
+}/*# sourceMappingURL=styles.css.map */

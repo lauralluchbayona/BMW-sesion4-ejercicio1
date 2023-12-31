@@ -1,0 +1,99 @@
+.sugerencias{
+    margin-left: 13%;
+    margin-right: 13%;
+    margin-top: 50px;
+
+    &-linea1{
+        display: flex;
+        justify-content: space-between;
+
+        &-recuadro{
+            @include recuadro;
+            max-width: 20.5%;
+            @include desktop{
+                max-width: 22%;
+            }
+
+            &__img{
+                width: 100%;
+                height: 55px;   
+                @include desktop{
+                    height: 92px;
+                }
+            }
+
+            &__titulo{
+                @include h1;
+                font-size: 14px;
+                margin-top: 5px;
+                @include desktop{
+                    font-size: 21.5px;
+                }
+            }
+
+            &__parrafo{
+                @include h3;
+                font-weight: 300;
+                font-size: 8px;
+                margin-top: 5px;
+                @include desktop{
+                    font-size: 9.7px;
+                }
+            }
+
+            &__link{
+                @include h4;
+                margin-top: 5px;
+                @include desktop{
+                    font-size: 10px;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+    &-linea2{
+        margin-top: 35px;
+        margin-bottom: 75px;
+        display: flex;
+        justify-content: space-between;
+        @include desktop{
+            margin-top: 60px;
+        }
+
+        &-recuadro{
+            @include recuadro;
+            width: 46%;
+            @include desktop{
+                width: 47%;
+                padding: 8px;
+            }
+
+            &__img{
+                width: 100%;
+                height: 95px;
+                @include desktop{
+                    height: 190px;
+                }
+            }
+
+            &__titulo{
+                @include h1;
+                font-size: 14px;
+                margin-top: 5px;
+                @include desktop{
+                    font-size: 22px;
+                }
+
+            }
+
+            &__link{
+                @include h4;
+                margin-top: 5px;
+                @include desktop{
+                    font-size: 9.5  px;
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+}
